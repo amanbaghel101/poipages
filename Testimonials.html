@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Testimonials - POI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+  <link href="./Content/img/favicon.ico" rel="icon" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.css" rel="stylesheet">
+  <style>
+    .card {
+      border-radius: .7rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+
+      right: 30px;
+      bottom: 30px;
+      z-index: 99;
+    }
+
+    .permanent-register-btn {
+      display: block;
+      /* Ensure it is visible initially */
+      position: fixed;
+      right: 0px;
+      bottom: 50%;
+      padding: 5px 10px;
+      font-size: 13px;
+      cursor: pointer;
+      background-color: #007BFF;
+      /* Adjust color as needed */
+      color: white;
+      border: none;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 600px) {
+
+
+      .permanent-register-btn {
+        display: block;
+        /* Ensure it is visible initially */
+        position: fixed;
+        right: 0px;
+        bottom: 50%;
+        padding: 5px 10px;
+        font-size: 13px;
+        cursor: pointer;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 2px;
+      }
+    }
+
+    /* prvious icon */
+    .carousel-control-prev:hover {
+      color: blue;
+      /* Change background color to blue on hover */
+      border-color: blue;
+      /* Optionally, change border color if there's a border */
+    }
+
+    .carousel-control-prev:hover .carousel-control-prev-icon {
+      filter: invert(1);
+      /* Optional: Invert icon color for better visibility on blue background */
+    }
+
+    /* next icon */
+    .carousel-control-next:hover {
+      color: blue;
+      /* Change background color to blue on hover */
+      border-color: blue;
+      /* Optionally, change border color if there's a border */
+    }
+
+    .carousel-control-next:hover .carousel-control-next-icon {
+      filter: invert(1);
+      /* Optional: Invert icon color for better visibility on blue background */
+    }
+  </style>
+</head>
+
+<body class="hold-transition skin-green sidebar-mini">
+
+  <header class="main-header fixed-top">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/Home/Index">
+          <img src="content/img/logohome.png" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-weight: 450">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item pe-4">
+              <a class="nav-link active" aria-current="page" href="/Home/Index">Home</a>
+            </li>
+
+            <li class="nav-item dropdown pe-4 d-flex align-items-center">
+              <a class="nav-link" href="/Home/Aboutus">
+                About Us
+              </a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="padding-left: 0px;">
+                <span class="dropdown-toggle-icon"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/Home/Peoples">People</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="/Home/Index">Gallery</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="/Home/Index">Blog</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="/Home/Traingcources">Training & courses</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="/Home/Review">Testimonials</a>
+            </li>
+
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="/Home/ContactUs">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- Login Button -->
+          <a href="/Home/Login" class="btn btn-outline-success"
+            style="background-color: #358f39; color: white; font-size: 20px">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+  </header>
+  <!-- center start -->
+  <div class="team-box text-white"
+    style="height: 220px; margin-top: 65px; background-image: linear-gradient(to left bottom, #358f39, rgb(77, 77, 199));">
+    <h2 class="pt-5 ps-5" style="font-weight: 1000; font-size: 40px; ">What our clients say</h2>
+    <p class="ps-5 fs-5">Don't take our word for it</p>
+  </div>
+
+  <div class="our-team">
+    <section style="color: #000; background-color: #f3f2f2;">
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h3 class="fw-bold mb-4">Testimonials</h3>
+            <p class="mb-4 pb-2 mb-md-5 pb-md-0 fs-2">
+              What some recent clients say about their <br> experience with powerofinvestment
+            </p>
+          </div>
+        </div>
+
+        <!-- Carousel wrapper -->
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="row text-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <div class="card">
+                    <div class="card-body py-4 mt-2">
+                      <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                          class="rounded-circle shadow-1-strong" width="100" height="100" />
+                      </div>
+                      <h5 class="font-weight-bold">Teresa May</h5>
+                      <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                      <p class="mb-2">
+                        <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat
+                        ad velit ab hic tenetur.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <div class="card">
+                    <div class="card-body py-4 mt-2">
+                      <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+                          class="rounded-circle shadow-1-strong" width="100" height="100" />
+                      </div>
+                      <h5 class="font-weight-bold">Maggie McLoan</h5>
+                      <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                      <p class="mb-2">
+                        <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis suscipit saepe
+                        sapiente magnam officiis quaerat necessitatibus odio assumenda perferendis
+                        labore laboriosam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-0">
+                  <div class="card">
+                    <div class="card-body py-4 mt-2">
+                      <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                          class="rounded-circle shadow-1-strong" width="100" height="100" />
+                      </div>
+                      <h5 class="font-weight-bold">Alexa Horwitz</h5>
+                      <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                      <p class="mb-2">
+                        <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh libero, in gravida
+                        nulla metus scelerisque ante sollicitudin commodo cras purus odio,
+                        vestibulum in tempus viverra turpis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row text-center">
+                <!-- You can add more testimonials here in the same format as above -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <div class="card">
+                    <div class="card-body py-4 mt-2">
+                      <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+                          class="rounded-circle shadow-1-strong" width="100" height="100" />
+                      </div>
+                      <h5 class="font-weight-bold">Maggie McLoan</h5>
+                      <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                      <p class="mb-2">
+                        <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis suscipit saepe
+                        sapiente magnam officiis quaerat necessitatibus odio assumenda perferendis
+                        labore laboriosam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-0">
+                  <div class="card">
+                    <div class="card-body py-4 mt-2">
+                      <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                          class="rounded-circle shadow-1-strong" width="100" height="100" />
+                      </div>
+                      <h5 class="font-weight-bold">Alexa Horwitz</h5>
+                      <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                      <p class="mb-2">
+                        <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh libero, in gravida
+                        nulla metus scelerisque ante sollicitudin commodo cras purus odio,
+                        vestibulum in tempus viverra turpis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <div class="card">
+                    <div class="card-body py-4 mt-2">
+                      <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                          class="rounded-circle shadow-1-strong" width="100" height="100" />
+                      </div>
+                      <h5 class="font-weight-bold">Example Person</h5>
+                      <h6 class="font-weight-bold my-3">Job Title</h6>
+                      <p class="mb-2">
+                        <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat
+                        ad velit ab hic tenetur.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more columns if needed -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" style="background-color: #dcbcbc88;" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" style="background-color: #dcbcbc88;" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- End Carousel wrapper -->
+      </div>
+    </section>
+    <!-- Popup Structure -->
+    <!-- <div id="popup" class="popup" style="display:none;">  
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <p>
+            New Batch starting from 17th October 2024.<br />Limited seats
+            available. Register at the earliest.
+        </p>
+        <button id="register-btn">Register Here</button>
+    </div>
+</div> -->
+
+    <!-- Permanent Register Button -->
+    <button id="permanent-register-btn" class="permanent-register-btn">
+      Register <br>Here
+    </button>
+  </div>
+
+  <!-- Center end -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid text-light footer mt-2 py-5 wow fadeIn"
+    style="background-image: linear-gradient(to right top, #358f39, #2881c9)" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-4">Our Office</h4>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>C-180A, Second Floor,
+            Defence Colony, New Delhi - 110024
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+91-8287700609 <br />
+            <i class="fa fa-phone-alt me-3"></i>+91-6371126698
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>info@powerofinvestment.co.in
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+              href="https://t.me/power_of_investment" target="_blank">
+              <img src="content/img/icon/tele.png" class="social-icon" />
+            </a>
+            <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+              href="https://www.facebook.com/Power-Of-Investments-100214445387988/">
+              <img src="content/img/icon/fb.png" class="social-icon" />
+            </a>
+            <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+              href="https://www.youtube.com/channel/UCu2yAW-QvE4C87WE8lDhhwg" target="_blank">
+              <img src="content/img/icon/you.png" class="social-icon" />
+            </a>
+            <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+              href="#" target="_blank"> <img src="content/img/icon/twitter.png" class="social-icon" />
+              <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+                href="#" target="_blank">
+                <img src="content/img/icon/linkedin.png" class="social-icon" />
+                <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+                  href="https://www.instagram.com/invites/contact/?i=y7eb0xbkkw7m&utm_content=oiuzi48" target="_blank">
+                  <img src="content/img/icon/insta.png" class="social-icon" />
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy;
+          <a class="border-bottom" href="https://powerofinvestment.co.in">Power of investment/</a>, All Right
+          Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+
+          Designed By Power of investment
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+  <!-- JS library -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+
+  <script>
+    function toggleText(section) {
+      const moreText = document.getElementById(section + 'MoreText');
+      const snippet = document.getElementById(section + 'TextSnippet');
+      const button = document.getElementById(section + 'ToggleButton');
+      const extraContent = document.getElementById(section + 'ExtraContent');
+
+      if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        snippet.style.display = "none";
+        button.textContent = "Read Less";
+        extraContent.style.display = "block";
+      } else {
+        moreText.style.display = "none";
+        snippet.style.display = "block";
+        button.textContent = "Read More";
+        extraContent.style.display = "none";
+      }
+    }
+
+  </script>
+  <!-- for register here -->
+  <script>
+    window.onload = function () {
+      var popup = document.getElementById("popup");
+      var closebtn = document.querySelector(".close-btn");
+      var permanentRegisterBtn = document.getElementById("permanent-register-btn");
+
+      // Close the popup when the close button is clicked
+      closebtn.onclick = function () {
+        popup.style.display = "none";
+        permanentRegisterBtn.style.display = "block"; // Show the permanent button
+      };
+
+      // Show the popup when the permanent "Register Here" button is clicked
+      permanentRegisterBtn.onclick = function () {
+        popup.style.display = "block";
+        permanentRegisterBtn.style.display = "none"; // Hide the permanent button
+      };
+    };
+  </script>
+
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = document.querySelector('#testimonialCarousel');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 5000, // Set the interval to 5 seconds for automatic sliding
+        wrap: true // Allows the carousel to loop continuously
+    });
+});
+    </script> -->
+</body>
+
+</html>
