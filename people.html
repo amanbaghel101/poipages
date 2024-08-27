@@ -36,6 +36,12 @@
             /* This is default for Bootstrap modals */
         }
 
+        .orange-border {
+            border: 3px solid #b1563a;
+            /* Adds an orange border with a width of 3px */
+        }
+
+
         .permanent-register-btn {
             display: block;
             /* Ensure it is visible initially */
@@ -87,61 +93,60 @@
     <header class="main-header fixed-top">
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-            <div class="container-fluid">
-                <!-- Logo -->
-                <a class="navbar-brand" href="/Home/Index">
-                    <img src="content/img/logohome.png" alt="Logo" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-weight: 450">
-                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                        <li class="nav-item pe-4">
-                            <a class="nav-link active" aria-current="page" href="/Home/Index">Home</a>
-                        </li>
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="content/img/logohome.png" alt="Logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-weight: 450">
+                        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                            <li class="nav-item pe-4">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
 
-                        <li class="nav-item dropdown pe-4 d-flex align-items-center">
-                            <a class="nav-link" href="/Home/Aboutus">
-                                About Us
-                            </a>
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" style="padding-left: 0px;">
-                                <span class="dropdown-toggle-icon"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="/Home/Peoples">People</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="/Home/Index">Gallery</a>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="/Home/Index">Blog</a>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="/Home/Traingcources">Training & courses</a>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="/Home/Review">Testimonials</a>
-                        </li>
+                            <li class="nav-item dropdown pe-4 d-flex align-items-center">
+                                <a class="nav-link" href="index1.html">
+                                    About Us
+                                </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 0px;">
+                                    <span class="dropdown-toggle-icon"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="people.html">People</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="Blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="/Home/Traingcources">Training & courses</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="Testimonials.html">Testimonials</a>
+                            </li>
 
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="/Home/ContactUs">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Login Button -->
-                    <a href="/Home/Login" class="btn btn-outline-success"
-                        style="background-color: #358f39; color: white; font-size: 20px">Login</a>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="/Home/ContactUs">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>                            
+                        </ul>
+                        <!-- Login Button -->
+                        <a href="/Home/Login" class="btn btn-outline-success"
+                            style="background-color: #358f39; color: white; font-size: 20px">Login</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         <!-- Navbar End -->
 
     </header>
@@ -153,33 +158,316 @@
     </div>
 
     <div class="our-team">
-        <p class="team-t pt-3 ps-5" style="color: green; font-weight: 500;">OUR TEAM</p>
-        <h3 class="ps-5" style="font-weight: 500;">Learn more about our team</h3>
-        <!-- 1st profile -->
-        <div
-            class="profile1 border d-flex justify-content-center align-items-center flex-column flex-md-row px-3 px-md-5 w-100 w-md-75 mx-auto mt-3">
-            <div class="photo1 mb-3 mb-md-0 me-md-5">
-                <img src="content/img/1f2.png" alt="Founder's photo" class="img-fluid" style="height: 180px;">
-            </div>
-            <div class="about1 w-md-50 px-5 ms-md-4" style="margin-top: 20px; width: 500px;">
-                <h4>Prasanna Kumar Rath</h4>
-                <span>
-                    <h6>(Founder)</h6>
-                </span>
-                <p class="mt-2" id="courseMoreText1" style="display: none;">
-                    He is a retired government employee, with a keen interest in the financial market. Over the years he
-                    has seen many bull & bear markets. Due to lack of education, retail investors always end up on the
-                    losing side. His aim is to make retail investors independent & empowered by providing them with the
-                    required education.
-                </p>
-                <p id="courseTextSnippet1">
-                    He is a retired government employee, with a keen interest in the financial market...
-                </p>
-                <button id="courseToggleButton1" class="btn" data-bs-toggle="modal"
-                    data-bs-target="#readMoreModal1">Read More</button>
-            </div>
-        </div>
+        <section style="color: #000; background-color: #f3f2f2;">
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10 col-xl-8 text-center">
+                        <h3 class="fw-bold mb-4">OUR TEAM</h3>
+                        <p class="mb-4 pb-2 mb-md-5 pb-md-0 fs-2">
+                            Learn more about our team
+                        </p>
+                    </div>
+                </div>
 
+                <!-- Carousel wrapper -->
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row text-center">
+                                <!-- 1st profile -->
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="content/img/1f.png"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Prasanna Kumar Rath</h5>
+                                            <h6 class="font-weight-bold my-3">Founder</h6>
+                                            <p class="mb-2">
+                                                He is a retired government employee, with a keen interest in the
+                                                financial market...
+                                            </p>
+                                            <button id="courseToggleButton1" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal1">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2nd profile -->
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="content/img/2cf.png"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Alok Bhardwaj</h5>
+                                            <h6 class="font-weight-bold my-3">Co-Founder</h6>
+                                            <p class="mb-2">
+                                                He is the Co-Founder and Director at India's leading think tank
+                                                organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton2" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal2">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3rd profile -->
+                                <div class="col-md-4 mb-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Alexa Horwitz</h5>
+                                            <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                                            <p class="mb-2">
+                                                <i class="fas fa-quote-left pe-2"></i> He is the Co-Founder and Director
+                                                at India's leading think tank organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton3" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal3">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add a margin-top to the second row -->
+                            <div class="row text-center mt-3">
+                                <!-- 4th profile -->
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="content/img/2cf.png"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Alok Bhardwaj</h5>
+                                            <h6 class="font-weight-bold my-3">Co-Founder</h6>
+                                            <p class="mb-2">
+                                                He is the Co-Founder and Director at India's leading think tank
+                                                organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton4" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal4">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 5th profile -->
+                                <div class="col-md-4 mb-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Alexa Horwitz</h5>
+                                            <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                                            <p class="mb-2">
+                                                <i class="fas fa-quote-left pe-2"></i> He is the Co-Founder and Director
+                                                at India's leading think tank organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton5" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal5">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6th profile -->
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="content/img/1f.png"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Prasanna Kumar Rath</h5>
+                                            <h6 class="font-weight-bold my-3">Founder</h6>
+                                            <p class="mb-2">
+                                                He is a retired government employee, with a keen interest in the
+                                                financial market...
+                                            </p>
+                                            <button id="courseToggleButton6" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal6">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="row text-center">
+                                <!-- You can add more testimonials here in the same format as above -->
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Maggie McLoan</h5>
+                                            <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                                            <p class="mb-2">
+                                                <i class="fas fa-quote-left pe-2"></i> He is the Co-Founder and Director
+                                                at India's leading think tank organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton2" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal2">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Alexa Horwitz</h5>
+                                            <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                                            <p class="mb-2">
+                                                <i class="fas fa-quote-left pe-2"></i> He is the Co-Founder and Director
+                                                at India's leading think tank organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton2" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal2">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Example Person</h5>
+                                            <h6 class="font-weight-bold my-3">Job Title</h6>
+                                            <p class="mb-2">
+                                                <i class="fas fa-quote-left pe-2"></i> He is the Co-Founder and Director
+                                                at India's leading think tank organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton2" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal2">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more columns if needed -->
+                            </div>
+                            <!-- Add a margin-top to the second row -->
+                            <div class="row text-center mt-3">
+                                <!-- 4th profile -->
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="content/img/2cf.png"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Alok Bhardwaj</h5>
+                                            <h6 class="font-weight-bold my-3">Co-Founder</h6>
+                                            <p class="mb-2">
+                                                He is the Co-Founder and Director at India's leading think tank
+                                                organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton4" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal4">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 5th profile -->
+                                <div class="col-md-4 mb-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Alexa Horwitz</h5>
+                                            <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                                            <p class="mb-2">
+                                                <i class="fas fa-quote-left pe-2"></i> He is the Co-Founder and Director
+                                                at India's leading think tank organisation CSEPR...
+                                            </p>
+                                            <button id="courseToggleButton5" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal5">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6th profile -->
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="card shadow">
+                                        <div class="card-body py-4 mt-2">
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <img src="content/img/1f.png"
+                                                    class="rounded-circle shadow-1-strong orange-border" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <h5 class="font-weight-bold">Prasanna Kumar Rath</h5>
+                                            <h6 class="font-weight-bold my-3">Founder</h6>
+                                            <p class="mb-2">
+                                                He is a retired government employee, with a keen interest in the
+                                                financial market...
+                                            </p>
+                                            <button id="courseToggleButton6" class="btn" data-bs-toggle="modal"
+                                                data-bs-target="#readMoreModal6">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" style="background-color: #b1563a; margin-right: 40px;"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" style="background-color: #b1563a;"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- End Carousel wrapper -->
+            </div>
+        </section>
+
+        <!-- Popup Structure -->
+        <!-- <div id="popup" class="popup" style="display:none;"> 
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>
+                New Batch starting from 17th October 2024.<br />Limited seats
+                available. Register at the earliest.
+            </p>
+            <button id="register-btn">Register Here</button>
+        </div>
+    </div> -->
+
+        <!-- Permanent Register Button -->
+        <button id="permanent-register-btn" class="permanent-register-btn">
+            Register <br>Here
+        </button>
+
+        <!-- models -->
         <!-- Modal for 1st Profile -->
         <div class="modal fade" id="readMoreModal1" tabindex="-1" aria-labelledby="readMoreModalLabel1"
             aria-hidden="true">
@@ -191,7 +479,7 @@
                     </div>
                     <div class="modal-body d-flex flex-column align-items-center">
                         <div class="photo mb-3">
-                            <img src="content/img/1f2.png" alt="Founder's photo" class="img-fluid">
+                            <img src="content/img/1f2.png" style="height: 150px;" alt="Founder's photo" class="img-fluid">
                         </div>
                         <p>
                             He is a retired government employee, with a keen interest in the financial market. Over the
@@ -211,32 +499,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- 2nd Profile -->
-        <div
-            class="profile2 d-flex justify-content-center align-items-center flex-column flex-md-row px-3 px-md-5 w-100 w-md-75 mx-auto mt-3">
-            <div class="about2 w-md-50 px-3 me-md-5" style="margin-top: 0px; width: 500px;">
-                <h4>Alok Bhardwaj</h4>
-                <span>
-                    <h6>(Co-Founder)</h6>
-                </span>
-                <p class="mt-1" id="trainerMoreText" style="display: none;">
-                    He is the Co-Founder and Director at India's leading think tank organisation CSEPR. He holds a
-                    master's degree in Business management with specialization in marketing and finance. He is a great
-                    advocate of financial literacy. Under the banner of CSEPR, he regularly drives financial literacy
-                    programs in rural areas.
-                </p>
-                <p id="trainerTextSnippet">
-                    He is the Co-Founder and Director at India's leading think tank organisation CSEPR...
-                </p>
-                <button id="courseToggleButton2" class="btn" data-bs-toggle="modal"
-                    data-bs-target="#readMoreModal2">Read More</button>
-            </div>
-            <div class="photo2 mb-3 mb-md-0 ms-md-5">
-                <img src="content/img/2cf2.png" alt="Co-Founder's photo" class="img-fluid" style="height: 180px;">
-            </div>
-        </div>
-
         <!-- Modal for 2nd Profile -->
         <div class="modal fade" id="readMoreModal2" tabindex="-1" aria-labelledby="readMoreModalLabel2"
             aria-hidden="true">
@@ -248,7 +510,7 @@
                     </div>
                     <div class="modal-body d-flex flex-column align-items-center">
                         <div class="photo mb-3">
-                            <img src="content/img/2cf2.png" alt="Co-Founder's photo" class="img-fluid">
+                            <img src="content/img/2cf2.png"  style="height: 150px;" alt="Co-Founder's photo" class="img-fluid">
                         </div>
                         <p>
                             He is the Co-Founder and Director at India's leading think tank organisation CSEPR. He holds
@@ -269,81 +531,7 @@
             </div>
         </div>
 
-        <!-- 3rd Profile -->
-        <div
-            class="profile1 border d-flex justify-content-center align-items-center flex-column flex-md-row px-3 px-md-5 w-100 w-md-75 mx-auto mt-3">
-            <div class="photo1 mb-3 mb-md-0 me-md-5">
-                <img src="content/img/1f2.png" alt="Founder's photo" class="img-fluid">
-            </div>
-            <div class="about1 w-md-50 px-5 ms-md-4" style="margin-top: 20px; width: 500px;">
-                <h4>Prasanna Kumar Rath</h4>
-                <span>
-                    <h6>(Founder)</h6>
-                </span>
-                <p class="mt-2" id="courseMoreText3" style="display: none;">
-                    He is a retired government employee, with a keen interest in the financial market. Over the years he
-                    has seen many bull & bear markets. Due to lack of education, retail investors always end up on the
-                    losing side. His aim is to make retail investors independent & empowered by providing them with the
-                    required education.
-                </p>
-                <p id="courseTextSnippet3">
-                    He is a retired government employee, with a keen interest in the financial market...
-                </p>
-                <button id="courseToggleButton3" class="btn" data-bs-toggle="modal"
-                    data-bs-target="#readMoreModal3">Read More</button>
-            </div>
-        </div>
-
-        <!-- Modal for 3rd Profile -->
-        <div class="modal fade" id="readMoreModal3" tabindex="-1" aria-labelledby="readMoreModalLabel3"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="readMoreModalLabel3">Prasanna Kumar Rath (Founder)</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex flex-column align-items-center">
-                        <div class="photo mb-3">
-                            <img src="content/img/1f2.png" alt="Founder's photo" class="img-fluid">
-                        </div>
-                        <p>
-                            He is a retired government employee, with a keen interest in the financial market. Over the
-                            years he
-                            has seen many bull & bear markets. Due to lack of education, retail investors always end up
-                            on the
-                            losing side. His aim is to make retail investors independent & empowered by providing them
-                            with the
-                            required education.
-                        </p>
-                        <!-- Navigation Buttons -->
-                        <div class="d-flex justify-content-between w-100 mt-3">
-                            <button class="btn btn-secondary" id="prevProfile" data-bs-dismiss="modal">Previous</button>
-                            <button class="btn btn-secondary" id="nextProfile" data-bs-dismiss="modal">Next</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <!-- Popup Structure -->
-    <!-- <div id="popup" class="popup" style="display:none;"> 
-        <div class="popup-content">
-            <span class="close-btn">&times;</span>
-            <p>
-                New Batch starting from 17th October 2024.<br />Limited seats
-                available. Register at the earliest.
-            </p>
-            <button id="register-btn">Register Here</button>
-        </div>
-    </div> -->
-
-    <!-- Permanent Register Button -->
-    <button id="permanent-register-btn" class="permanent-register-btn">
-        Register <br>Here
-    </button>
-
     <!-- Center end -->
 
     <!-- Footer Start -->
@@ -405,7 +593,8 @@
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy;
-                    <a class="border-bottom" href="https://powerofinvestment.co.in">Power of investment/</a>, All Right
+                    <a class="border-bottom" href="https://powerofinvestment.co.in">Power of investment/</a>, All
+                    Right
                     Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
@@ -460,7 +649,6 @@
     </script>
 
 
-    </script>
 
 
     <!-- for register here popup -->
